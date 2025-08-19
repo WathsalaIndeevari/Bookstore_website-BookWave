@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="Assets/img/favicon1.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+ 
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="Assets/CSS/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="Assets/CSS/styles.css">
+      <link rel="stylesheet" href="Assets/CSS/styles2.css">
+      <link rel="stylesheet" href="Assets/CSS/styles3.css">
+
+      <title>BookWave</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+                <nav class="nav__logo">
+                    <img src="Assets/img/logo.jpg" alt="website logo">BookWave
+                </nav>
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="ri-home-2-line"></i>
+                                <span>HOME</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#bestsellers" class="nav__link">
+                                <i class="ri-book-line"></i>
+                                <span>BESTSELLERS</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#discount" class="nav__link">
+                                <i class="ri-price-tag-3-line"></i>
+                                <span>DISCOUNT</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#new" class="nav__link">
+                                <i class="ri-bookmark-line"></i>
+                                <span>NEW BOOKS</span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#testimonial" class="nav__link">
+                                <i class="ri-chat-smile-2-line"></i>
+                                <span>TESTIMONIAL</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav__actions">
+                    <!--Search button-->
+                    <i class="ri-search-line search-button" id="search-button"></i>
+                    <!--Login button-->
+                    <i class="ri-user-line login-button" id="login-button"></i>
+                    <!--Theme button-->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+         </nav>
+      </header>
+
+      <!--==================== SEARCH ====================-->
+      <div class="search" id="search-content">
+         <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+         </form>
+
+         <i class="ri-close-line search__close" id="search-close"></i>
+      </div>
+
+      <!--==================== LOGIN ====================-->
+      <div class="login grid" id="login-content">
+         <form action="" class="login__form grid">
+            <h3 class="login__title">Log In</h3>
+
+            <div class="login__group grid">
+                <div>
+                    <label for="login-email" class="login__label">Email</label>
+                    <input type="email" placeholder="Write Your Email" id="login-email" class="login__input">
+                </div>
+
+                <div>
+                    <label for="login-pass" class="login__label">Password</label>
+                    <input type="password" placeholder="Enter Your Password" id="login-pass" class="login__input">
+                </div>
+
+                <div>
+                    <span class="login__signup">
+                        You do not have an account? <a href="signup.html">Sign Up</a>
+                    </span>
+
+                    <a href="forgotpassword.html" class="login__forgot">
+                        You forgot your password
+                    </a>
+
+                    
+                </div>
+                <button type="submit" class="login__button button">Log In</button>
+            </div>
+         </form>
+
+         <i class="ri-close-line login__close" id="login-close"></i>
+      </div>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Welcome <br>
+                            to <br>
+                            BookWave
+                        </h1>
+
+                        <p class="home__description">
+                            <i>Your library, Your way.</i> Find the best 
+                            E-Books from your favorite
+                            writers, explore hundreds of books with all 
+                            possible catogories, take advantages of 
+                            the 50% discount and much more..<br>
+                            Download eBooks instantly or have your favourite reads 
+                            delivered to your door with free shipping.
+                        </p>
+
+                        <a href="explore.html" class="button">Explore Now</a>
+                    </div>
+
+                    <div class="home__images">
+                        <div class="home__swiper swiper">
+                            <div class="swiper-wrapper">
+                                <article class="home__article swiper-slide">
+                                    <img src="Assets/img/Home-1.jpg" alt="image" class="home__img">
+                                </article>
+
+                                <article class="home__article swiper-slide">
+                                    <img src="Assets/img/Home-2.jpg" alt="image" class="home__img">
+                                </article>
+
+                                <article class="home__article swiper-slide">
+                                    <img src="Assets/img/Home-3.jpg" alt="image" class="home__img">
+                                </article>
+
+                                <article class="home__article swiper-slide">
+                                    <img src="Assets/img/Home-4.jpg" alt="image" class="home__img">
+                                </article>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+         <!--==================== SERVICES ====================-->
+            <section class="services section">
+                <div class="services__container container grid">
+                    <article class="services__card">
+                        <i class="ri-truck-line"></i>
+                        <h3 class="services__title">Free Shipping</h3>
+                        <p class="services__description">Order More Than $100</p>
+                    </article>
+
+                    <article class="services__card">
+                        <i class="ri-lock-2-line"></i>
+                        <h3 class="services__title">Secure payment</h3>
+                        <p class="services__description">100% Secure Payment</p>
+                    </article>
+    
+                    <article class="services__card">
+                        <i class="ri-customer-service-2-line"></i>
+                        <h3 class="services__title">24/7 Support</h3>
+                        <p class="services__description">Call us anytime</p>
+                    </article>
+                </div>
+            </section>
+
+         <!--==================== BESTSELLERS ====================-->
+            <section class="bestsellers section" id="bestsellers">
+                <h2 class="section__title">Bestsellers Books</h2>
+
+                <div class="bestsellers__container container">
+                    <div class="bestsellers__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <article class="bestsellers__card swiper-slide">
+                                <img src="Assets/img/bestsellers-1.jpeg" alt="image" class="bestsellers__img">
+                                
+                                <h2 class="bestsellers__title">Bigger & Better</h2>
+                                <div class="bestsellers__prices">
+                                    <span class="bestsellers__discount">$10.99</span>
+                                    <span class="bestsellers__price">$18.99</span>
+                                </div>
+
+                                <button class="button">Add To Cart</button>
+
+                                <div class="bestsellers__actions">
+                                    <button><i class="ri-heart-3-line"></i></button>
+                                    <button><i class="ri-eye-line"></i></button>
+                                    <button><i class="ri-download-line"></i></button>
+                                    <button><i class="ri-share-line"></i></button>
+                                </div>
+                            </article>
+
+                            <article class="bestsellers__card swiper-slide">
+                                <img src="Assets/img/bestsellers-2.jpg" alt="image" class="bestsellers__img">
+                                
+                                <h2 class="bestsellers__title">Native Invisibility</h2>
+                                <div class="bestsellers__prices">
+                                    <span class="bestsellers__discount">$10.99</span>
+                                    <span class="bestsellers__price">$18.99</span>
+                                </div>
+
+                                <button class="button">Add To Cart</button>
+
+                                <div class="bestsellers__actions">
+                                    <button><i class="ri-heart-3-line"></i></button>
+                                    <button><i class="ri-eye-line"></i></button>
+                                    <button><i class="ri-download-line"></i></button>
+                                    <button><i class="ri-share-line"></i></button>
+                                </div>
+                            </article>
+
+                            <article class="bestsellers__card swiper-slide">
+                                <img src="Assets/img/bestsellers-3.webp" alt="image" class="bestsellers__img">
+                                
+                                <h2 class="bestsellers__title">Finance Basics</h2>
+                                <div class="bestsellers__prices">
+                                    <span class="bestsellers__discount">$10.99</span>
+                                    <span class="bestsellers__price">$18.99</span>
+                                </div>
+
+                                <button class="button">Add To Cart</button>
+
+                                <div class="bestsellers__actions">
+                                    <button><i class="ri-heart-3-line"></i></button>
+                                    <button><i class="ri-eye-line"></i></button>
+                                    <button><i class="ri-download-line"></i></button>
+                                    <button><i class="ri-share-line"></i></button>
+                                </div>
+                            </article>
+
+                            <article class="bestsellers__card swiper-slide">
+                                <img src="Assets/img/bestsellers-4.jpeg" alt="image" class="bestsellers__img">
+                                
+                                <h2 class="bestsellers__title">Wolf Signs</h2>
+                                <div class="bestsellers__prices">
+                                    <span class="bestsellers__discount">$10.99</span>
+                                    <span class="bestsellers__price">$18.99</span>
+                                </div>
+
+                                <button class="button">Add To Cart</button>
+
+                                <div class="bestsellers__actions">
+                                    <button><i class="ri-heart-3-line"></i></button>
+                                    <button><i class="ri-eye-line"></i></button>
+                                    <button><i class="ri-download-line"></i></button>
+                                    <button><i class="ri-share-line"></i></button>
+                                </div>
+                            </article>
+
+                            <article class="bestsellers__card swiper-slide">
+                                <img src="Assets/img/bestsellers-5.jpeg" alt="image" class="bestsellers__img">
+                                
+                                <h2 class="bestsellers__title">Walk In To The Shadow</h2>
+                                <div class="bestsellers__prices">
+                                    <span class="bestsellers__discount">$10.99</span>
+                                    <span class="bestsellers__price">$18.99</span>
+                                </div>
+
+                                <button class="button">Add To Cart</button>
+
+                                <div class="bestsellers__actions">
+                                    <button><i class="ri-heart-3-line"></i></button>
+                                    <button><i class="ri-eye-line"></i></button>
+                                    <button><i class="ri-download-line"></i></button>
+                                    <button><i class="ri-share-line"></i></button>
+                                </div>
+                            </article>
+
+                            <article class="bestsellers__card swiper-slide">
+                                <img src="Assets/img/bestsellers-6.jpg" alt="image" class="bestsellers__img">
+                                
+                                <h2 class="bestsellers__title">The Beauty Within</h2>
+                                <div class="bestsellers__prices">
+                                    <span class="bestsellers__discount">$10.99</span>
+                                    <span class="bestsellers__price">$18.99</span>
+                                </div>
+
+                                <button class="button">Add To Cart</button>
+
+                                <div class="bestsellers__actions">
+                                    <button><i class="ri-heart-3-line"></i></button>
+                                    <button><i class="ri-eye-line"></i></button>
+                                    <button><i class="ri-download-line"></i></button>
+                                    <button><i class="ri-share-line"></i></button>
+                                </div>
+                            </article>
+
+                            <article class="bestsellers__card swiper-slide">
+                                <img src="Assets/img/bestsellers-7.jpeg" alt="image" class="bestsellers__img">
+                                
+                                <h2 class="bestsellers__title">The Cradle Night</h2>
+                                <div class="bestsellers__prices">
+                                    <span class="bestsellers__discount">$10.99</span>
+                                    <span class="bestsellers__price">$18.99</span>
+                                </div>
+
+                                <button class="button">Add To Cart</button>
+
+                                <div class="bestsellers__actions">
+                                    <button><i class="ri-heart-3-line"></i></button>
+                                    <button><i class="ri-eye-line"></i></button>
+                                    <button><i class="ri-download-line"></i></button>
+                                    <button><i class="ri-share-line"></i></button>
+                                </div>
+                            </article>
+
+                            <article class="bestsellers__card swiper-slide">
+                                <img src="Assets/img/bestsellers-8.jpg" alt="image" class="bestsellers__img">
+                                
+                                <h2 class="bestsellers__title">Poem for every night in the year</h2>
+                                <div class="bestsellers__prices">
+                                    <span class="bestsellers__discount">$10.99</span>
+                                    <span class="bestsellers__price">$18.99</span>
+                                </div>
+
+                                <button class="button">Add To Cart</button>
+
+                                <div class="bestsellers__actions">
+                                    <button><i class="ri-share-line"></i></button>
+                                    <button><i class="ri-heart-3-line"></i></button>
+                                    <button><i class="ri-eye-line"></i></button>
+                                    <button><i class="ri-download-line"></i></button>
+                                </div>
+                            </article>
+
+                            <article class="bestsellers__card swiper-slide">
+                                <img src="Assets/img/bestsellers-9.webp" alt="image" class="bestsellers__img">
+                                
+                                <h2 class="bestsellers__title">Midnight Caller</h2>
+                                <div class="bestsellers__prices">
+                                    <span class="bestsellers__discount">$10.99</span>
+                                    <span class="bestsellers__price">$18.99</span>
+                                </div>
+
+                                <button class="button">Add To Cart</button>
+
+                                <div class="bestsellers__actions">
+                                    <button><i class="ri-share-line"></i></button>
+                                    <button><i class="ri-heart-3-line"></i></button>
+                                    <button><i class="ri-eye-line"></i></button>
+                                    <button><i class="ri-download-line"></i></button>
+                                </div>
+                            </article>
+
+                            <article class="bestsellers__card swiper-slide">
+                                <img src="Assets/img/bestsellers-10.jpg" alt="image" class="bestsellers__img">
+                                
+                                <h2 class="bestsellers__title">Like A Charm</h2>
+                                <div class="bestsellers__prices">
+                                    <span class="bestsellers__discount">$10.99</span>
+                                    <span class="bestsellers__price">$18.99</span>
+                                </div>
+
+                                <button class="button">Add To Cart</button>
+
+                                <div class="bestsellers__actions">
+                                    <button><i class="ri-share-line"></i></button>
+                                    <button><i class="ri-heart-3-line"></i></button>
+                                    <button><i class="ri-eye-line"></i></button>
+                                    <button><i class="ri-download-line"></i></button>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+         <!--==================== DISCOUNT ====================-->
+            <section class="discount section" id="discount">
+                <div class="discount__container container grid">
+                    <div class="discount__data">
+                        <h2 class="discount__title section__">Up To 50% Discount</h2>
+
+                        <p class="discount__description">
+                            Take advantage of the discount days we 
+                            have for you, buy books from your favorite 
+                            writers, the more you buy, the more 
+                            discounts we have for you.
+                        </p>
+                        <a href="#" class="button">Shop Now</a>
+                    </div>
+
+                    
+
+                    <div class="discount__images">
+                        <img src="Assets/img/Discount-1.jpg" alt="image" class="discount__img-1">
+                        <img src="Assets/img/Discount-2.jpg" alt="image" class="discount__img-2">
+                    </div>
+                </div>
+            </section>
+
+         <!--==================== NEW BOOKS ====================-->
+            <section class="new section" id="new">
+                <h2 class="section__title">
+                    New Books
+                </h2>
+
+                <div class="new__container container">
+                    <div class="new__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-1.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">SOUL</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-2.jpeg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">The hills of mist</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-3.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">The girl with no reflection</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-4.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">The queen of secrets</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-5.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">Pride and prejudice</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-6.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">Alice in Neverland</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-7.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">The last chance Hotel</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-8.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">The hurricane wars</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-9.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">Anaya and the Nightingale</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-10.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">The art of holding on and letting go</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="new__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-1.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">SOUL</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-2.jpeg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">The hills of mist</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-3.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">The girl with no reflection</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-4.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">The queen of secrets</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-5.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">Pride and prejudice</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-6.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">Alice in Neverland</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-7.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">The last chance Hotel</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-8.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">The hurricane wars</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-9.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">Anaya and the Nightingale</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-10.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">The art of holding on and letting go</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="new__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-1.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">SOUL</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-2.jpeg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">The hills of mist</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-3.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">The girl with no reflection</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-4.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">The queen of secrets</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-5.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">Pride and prejudice</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-6.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">Alice in Neverland</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-7.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">The last chance Hotel</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-8.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">The hurricane wars</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-9.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">Anaya and the Nightingale</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="new__card swiper-slide">
+                                <img src="Assets/img/new-10.jpg" alt="image" class="new__img">
+
+                                <div>
+                                    <h2 class="new__title">The art of holding on and letting go</h2>
+                                    <div class="new__prices">
+                                        <span class="new__discount">$5.99</span>
+                                        <span class="new__price">$11.99</span>
+                                    </div>
+
+                                    <div class="new__stars">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-half-fill"></i>
+                                    </div>
+
+                                    <div class="new__actions">
+                                        <button><i class="ri-eye-line"></i></button>
+                                        <button><i class="ri-download-line"></i></button>
+                                        <button><i class="ri-shopping-cart-line"></i></button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+         <!--==================== JOIN ====================-->
+            <section class="join section">
+                <div class="join__container">
+                    <img src="Assets/img/join(1).jpg" alt="image" class="join__bg">
+
+                    <div class="join__data container grid">
+                        <h2 class="join__title section__title">
+                            Subscribe To Receive <br>
+                            The Latest Updates
+                        </h2>
+
+                        <form action="" class="join__form">
+                            <input type="email" placeholder="Enter Email" class="join__input">
+                            <button type="submit" class="join__button button">Subscribe</button>
+                        </form>
+
+                    
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section" id="testimonial">
+                <h2 class="section__title">Customer Opinions</h2>
+                
+                <div class="testimonial__container container">
+                    <div class="testimonial__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <article class="testimonial__card swiper-slide">
+                                <img src="Assets/img/customer-1.webp" alt="image" class="testimonial__img">
+
+                                <h2 class="testimonial__title">Emma Fernando</h2>
+                                <p class="testimonial__description">The best website to read books, Great service!
+                                </p>
+
+                                <div class="testimonial__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </article>
+
+                            <article class="testimonial__card swiper-slide">
+                                <img src="Assets/img/customer-2.webp" alt="image" class="testimonial__img">
+
+                                <h2 class="testimonial__title">John William</h2>
+                                <p class="testimonial__description">Good service and variety of good books. Thanks.
+                                </p>
+
+                                <div class="testimonial__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </article>
+
+                            <article class="testimonial__card swiper-slide">
+                                <img src="Assets/img/customer-3.webp" alt="image" class="testimonial__img">
+
+                                <h2 class="testimonial__title">Olivia Hazel</h2>
+                                <p class="testimonial__description">Best place to buy all kind of books.💯 recommended.
+                                </p>
+
+                                <div class="testimonial__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </article>
+
+                            <article class="testimonial__card swiper-slide">
+                                <img src="Assets/img/customer-4.jpg" alt="image" class="testimonial__img">
+
+                                <h2 class="testimonial__title">Arav Mateo</h2>
+                                <p class="testimonial__description">Ordered a book and they got it delivered within the very next day. 
+                                    Excellent service!
+                                </p>
+
+                                <div class="testimonial__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </article>
+
+                            <article class="testimonial__card swiper-slide">
+                                <img src="Assets/img/customer-5.jpeg" alt="image" class="testimonial__img">
+
+                                <h2 class="testimonial__title">Sara Vivian</h2>
+                                <p class="testimonial__description"> Best place to find a book.
+                                    Great service!
+                                </p>
+
+                                <div class="testimonial__stars">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-half-fill"></i>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+            <div class="footer__container container grid">
+                <div>
+                    <nav class="footer__logo">
+                        <img src="Assets/img/logo.jpg" alt="website logo">BookWave
+                    </nav>
+                    
+                    <p class="footer__description">
+                        Find and explore the best <br>
+                        Books from all your <br>
+                        favorite writers.
+                    </p>
+                </div>
+
+                <div class="footer__data grid">
+                    <div>
+                        <h3 class="footer__title">About</h3>
+
+                        <ul class="footer__Links">
+                            <li>
+                                <a href="#" class="footer__link">FAQs</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Privacy Policy</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Terms of Services</a>
+                            </li>   
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="footer__title">Company</h3>
+
+                        <ul class="footer__Links">
+                            <li>
+                                <a href="#" class="footer__link">Blogs</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Community</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Our Team</a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="footer__link">Help Center</a>
+                            </li>   
+                        </ul>
+                    </div>
+                
+                    <div>
+                        <h3 class="footer__title">Contact</h3>
+
+                        <ul class="footer__Links">
+                            <li>
+                                <address class="footer__info">
+                                    No. 03 <br>
+                                    Colombo-22.
+                                </address>
+                            </li>   
+
+                            <li>
+                                <address class="footer__info">
+                                    bookwave@email.com <br>
+                                    011-1234567 <br>
+                                    071-1231231
+                                </address>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">Social</h3>
+
+                        <div class="footer__social">
+                            <a href="https://whatsapp.com/" target="_blank" class="footer__social-link">
+                                <i class="ri-whatsapp-line"></i>
+                            </a>
+
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                                <i class="ri-facebook-circle-line"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <span class="footer__copy">
+                Copyright &#169; BookWave 2024 All Rights Reserved.
+            </span>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="Assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="Assets/js/swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="Assets/js/main.js"></script>
+   </body>
+</html>
